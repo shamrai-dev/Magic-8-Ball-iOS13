@@ -16,27 +16,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ask Me Anything..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kkd-dS-zVl">
-                                <rect key="frame" x="49" y="126" width="317" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LhH-CC-bn1">
-                                <rect key="frame" x="87" y="298" width="240" height="240"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ask Me Anything..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IvI-yY-BMF">
-                                <rect key="frame" x="49" y="822" width="317" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask Me Anything..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IvI-yY-BMF">
+                                <rect key="frame" x="125.5" y="838" width="163" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask Me Anything..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kkd-dS-zVl">
+                                <rect key="frame" x="64" y="256.5" width="286" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball1" translatesAutoresizingMaskIntoConstraints="NO" id="LhH-CC-bn1">
+                                <rect key="frame" x="10" y="1376" width="305" height="273"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.38590180870000002" green="0.80471640830000002" blue="0.99620348219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LhH-CC-bn1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="C2G-BC-Et3"/>
+                            <constraint firstItem="LhH-CC-bn1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F1j-dZ-eW4"/>
+                            <constraint firstItem="IvI-yY-BMF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X69-Wq-dch"/>
+                            <constraint firstItem="LhH-CC-bn1" firstAttribute="top" secondItem="Kkd-dS-zVl" secondAttribute="bottom" constant="12" id="eeq-q4-wGs"/>
+                            <constraint firstItem="IvI-yY-BMF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="h7L-XV-fhY"/>
+                            <constraint firstItem="Kkd-dS-zVl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jvh-AH-b31"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="LhH-CC-bn1" id="bAi-ic-MxL"/>
@@ -49,4 +54,7 @@
             <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ball1" width="305" height="273.5"/>
+    </resources>
 </document>
